@@ -182,14 +182,18 @@ section[id] { scroll-margin-top: 96px; }
 
 /* ============ Nav ============ */
 .nav {
+  /* width: 100vw (not left+right) avoids a fixed-position containing-block miscalculation
+     that some Chromium builds hit when the root direction is rtl. */
   position: fixed;
   top: 14px;
-  left: 0; right: 0;
+  left: 0;
+  width: 100vw;
   z-index: 100;
   display: flex;
   justify-content: center;
   padding: 0 16px;
   pointer-events: none;
+  box-sizing: border-box;
 }
 
 .nav-pill {
@@ -655,7 +659,18 @@ td:last-child { text-align: right; font-weight: 650; color: var(--ink); }
 }
 .radio input { accent-color: var(--ink); }
 
-.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+/* Visually hidden without off-screen negative offsets — a large negative left/right
+   becomes live, auto-scrolled-to overflow in rtl documents in some browsers. */
+.hp {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
 
 .form-footer { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
 #formStatus { font-size: 13.5px; font-weight: 500; }
