@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sk -L https://www.rijschool-omary.nl/ -o 'C:\\\\Users\\\\artem/site_home.html' -w 'HTTP_STATUS:%{http_code}\\\\n' --max-time 20)",
+      "Read(//c/Users/artem/**)"
+    ]
+  }
+}
