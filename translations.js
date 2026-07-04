@@ -111,7 +111,7 @@ window.TRANSLATIONS = {
       hours: 'Maandag t/m zaterdag', area: 'Zeist, Utrecht & omstreken',
       infoTitle: 'Bedrijfsgegevens', cbr: 'CBR-registratie', kvk: 'KvK', btw: 'BTW-nummer', iban: 'IBAN',
     },
-    footer: { tagline: 'rijschool in Zeist & Utrecht' },
+    footer: { tagline: 'rijschool in Zeist & Utrecht', v2Link: 'Bekijk de donkere versie' },
   },
 
   en: {
@@ -216,7 +216,7 @@ window.TRANSLATIONS = {
       hours: 'Monday to Saturday', area: 'Zeist, Utrecht & surroundings',
       infoTitle: 'Business details', cbr: 'CBR registration', kvk: 'Chamber of Commerce (KvK)', btw: 'VAT number', iban: 'IBAN',
     },
-    footer: { tagline: 'driving school in Zeist & Utrecht' },
+    footer: { tagline: 'driving school in Zeist & Utrecht', v2Link: 'View the dark version' },
   },
 
   ru: {
@@ -321,7 +321,7 @@ window.TRANSLATIONS = {
       hours: 'С понедельника по субботу', area: 'Зейст, Утрехт и окрестности',
       infoTitle: 'Реквизиты компании', cbr: 'Регистрация CBR', kvk: 'Торговая палата (KvK)', btw: 'Номер НДС', iban: 'IBAN',
     },
-    footer: { tagline: 'автошкола в Зейсте и Утрехте' },
+    footer: { tagline: 'автошкола в Зейсте и Утрехте', v2Link: 'Тёмная версия сайта' },
   },
 
   fa: {
@@ -426,6 +426,6 @@ window.TRANSLATIONS = {
       hours: 'دوشنبه تا شنبه', area: 'زایست، اوترخت و اطراف',
       infoTitle: 'اطلاعات شرکت', cbr: 'ثبت CBR', kvk: 'اتاق بازرگانی (KvK)', btw: 'شماره مالیات بر ارزش‌افزوده', iban: 'شماره شبا (IBAN)',
     },
-    footer: { tagline: 'آموزشگاه رانندگی در زایست و اوترخت' },
+    footer: { tagline: 'آموزشگاه رانندگی در زایست و اوترخت', v2Link: 'نسخه تیره سایت' },
   },
 };

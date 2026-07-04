@@ -203,20 +203,25 @@ function serveStatic(req, res, pathname) {
     return res.end('Not found');
   }
 
-  const filePath = path.join(ROOT, path.normalize(p));
+  let filePath = path.join(ROOT, path.normalize(p));
   if (!filePath.startsWith(ROOT)) {
     res.writeHead(403);
     return res.end('Forbidden');
   }
 
-  fs.readFile(filePath, (err, content) => {
-    if (err) {
-      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-      return res.end('Not found');
-    }
-    const ext = path.extname(filePath).toLowerCase();
-    res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
-    res.end(content);
+  // Directory requests (e.g. /v2 or /v2/) resolve to their index.html
+  fs.stat(filePath, (statErr, st) => {
+    if (!statErr && st.isDirectory()) filePath = path.join(filePath, 'index.html');
+
+    fs.readFile(filePath, (err, content) => {
+      if (err) {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        return res.end('Not found');
+      }
+      const ext = path.extname(filePath).toLowerCase();
+      res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
+      res.end(content);
+    });
   });
 }
 

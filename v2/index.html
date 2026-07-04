@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">Rijschool Omary — Rijlessen in Zeist &amp; Utrecht in vier talen</title>
+<meta id="metaDescription" name="description" content="Rijschool Omary geeft rijlessen in Zeist, Utrecht, De Bilt, Doorn en regio Amersfoort — in het Nederlands, Engels, Perzisch en Russisch." />
+<meta name="theme-color" content="#0b0b0c" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rijschool Omary — Rijlessen in Zeist &amp; Utrecht" />
+<meta property="og:description" content="Rijlessen in vier talen: Nederlands, Engels, Perzisch en Russisch. Vaste instructeur en lesauto, lespakketten voor elk niveau." />
+<meta property="og:locale" content="nl_NL" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f7c948'/%3E%3Cg fill='none' stroke='%230b0b0c' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='16' cy='16' r='9'/%3E%3Ccircle cx='16' cy='16' r='3'/%3E%3Cpath d='M16 19v6M13.4 14.6 8.2 11.5M18.6 14.6l5.2-3.1'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/v2/styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "name": "Rijschool Omary",
+  "telephone": "+31628421696",
+  "email": "mnomary@hotmail.com",
+  "areaServed": ["Zeist", "Utrecht", "De Bilt", "Doorn", "Amersfoort"],
+  "availableLanguage": ["nl", "en", "fa", "ru"],
+  "priceRange": "€67 - €4700",
+  "openingHours": "Mo-Sa"
+}
+</script>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="#home" class="wordmark" id="brandHome" aria-label="Rijschool Omary — home">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+      <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.6"/>
+      <path d="M12 14.6V21M9.7 10.7 4.2 7.6M14.3 10.7l5.5-3.1"/>
+    </svg>
+    <span>OMARY</span>
+  </a>
+
+  <nav class="topbar-links" aria-label="Hoofdnavigatie">
+    <a href="#over-ons" data-i18n="nav.about">Over ons</a>
+    <a href="#tarieven" data-i18n="nav.pricing">Tarieven</a>
+    <a href="#actie" data-i18n="nav.promo">Actie</a>
+    <a href="#werkwijze" data-i18n="nav.process">Werkwijze</a>
+    <a href="#links" data-i18n="nav.links">Links</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="topbar-actions">
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span id="langBtnLabel">NL</span>
+        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lang-chevron"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <ul class="lang-menu" id="langMenu" role="listbox"></ul>
+    </div>
+    <a href="tel:+31628421696" class="topbar-phone">06-28421696</a>
+    <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <nav class="menu-links" aria-label="Menu">
+    <a href="#home"><em>01</em><span data-i18n="nav.home">Home</span></a>
+    <a href="#over-ons"><em>02</em><span data-i18n="nav.about">Over ons</span></a>
+    <a href="#tarieven"><em>03</em><span data-i18n="nav.pricing">Tarieven</span></a>
+    <a href="#actie"><em>04</em><span data-i18n="nav.promo">Actie</span></a>
+    <a href="#werkwijze"><em>05</em><span data-i18n="nav.process">Werkwijze</span></a>
+    <a href="#links"><em>06</em><span data-i18n="nav.links">Links</span></a>
+    <a href="#contact"><em>07</em><span data-i18n="nav.contact">Contact</span></a>
+  </nav>
+  <div class="menu-foot">
+    <a href="tel:+31628421696">06-28421696</a>
+    <a href="mailto:mnomary@hotmail.com">mnomary@hotmail.com</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <p class="hero-tag rv" data-i18n="hero.badge">Erkende rijschool · CBR-registratie 2418R8</p>
+    <h1 class="rv">
+      <span class="line solid" data-i18n="hero.title1">Haal je rijbewijs.</span>
+      <span class="line outline" data-i18n="hero.title2">Rustig, zeker en op jouw tempo.</span>
+    </h1>
+    <div class="hero-bottom rv">
+      <p class="hero-sub" data-i18n="hero.sub">
+        Rijschool Omary is de enige rijschool in de regio Utrecht en Amersfoort die rijlessen
+        aanbiedt in vier talen: Nederlands, Engels, Perzisch en Russisch. Elke les stemmen we af
+        op jouw niveau — en we oefenen op de officiële examenroutes.
+      </p>
+      <div class="hero-cta">
+        <a href="#tarieven" class="btn btn-fill" data-i18n="hero.cta1">Bekijk tarieven</a>
+        <a href="#contact" class="btn btn-line" data-i18n="hero.cta2">Neem contact op</a>
+      </div>
+    </div>
+    <div class="road-line" aria-hidden="true"></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat rv">
+      <span class="stat-num" data-count="4">0</span>
+      <span class="stat-label" data-i18n="hero.statLangs">lestalen</span>
+    </div>
+    <div class="stat rv">
+      <span class="stat-num" data-count="6">0</span>
+      <span class="stat-label" data-i18n="hero.statDays">lesdagen per week</span>
+    </div>
+    <div class="stat rv">
+      <span class="stat-num" data-count="8">0</span>
+      <span class="stat-label" data-i18n="hero.statPackages">lespakketten</span>
+    </div>
+    <div class="stat rv">
+      <span class="stat-num" data-count="60">0</span>
+      <span class="stat-label" data-i18n="hero.statMinutes">minuten per les</span>
+    </div>
+  </section>
+
+  <!-- OVER ONS -->
+  <section class="section" id="over-ons">
+    <header class="sec-head rv">
+      <p class="sec-eyebrow"><i>01</i><span data-i18n="about.eyebrow">Over ons</span></p>
+      <h2 class="sec-title" data-i18n="about.title">Waarom leerlingen voor Omary kiezen</h2>
+      <p class="sec-lead" data-i18n="about.lead">Ons doel is dat iedere leerling zich op zijn of haar gemak voelt.
+        Daarom stemmen we de lessen af op jouw niveau en behoeften — en denken we graag met je mee.</p>
+    </header>
+
+    <div class="index-list">
+      <div class="index-row rv">
+        <span class="index-no">01</span>
+        <h3 data-i18n="about.f1title">Meertalige lessen</h3>
+        <p data-i18n="about.f1desc">Als enige rijschool in de regio geven wij les in het Nederlands, Engels, Perzisch én Russisch.</p>
+      </div>
+      <div class="index-row rv">
+        <span class="index-no">02</span>
+        <h3 data-i18n="about.f2title">Vaste instructeur &amp; lesauto</h3>
+        <p data-i18n="about.f2desc">Bij onze lespakketten krijg je een vaste rijinstructeur en een vaste lesauto — rust en continuïteit.</p>
+      </div>
+      <div class="index-row rv">
+        <span class="index-no">03</span>
+        <h3 data-i18n="about.f3title">Oefenen op examenroutes</h3>
+        <p data-i18n="about.f3desc">We rijden regelmatig de officiële CBR-examenroutes, zodat je goed voorbereid aan je examen begint.</p>
+      </div>
+      <div class="index-row rv">
+        <span class="index-no">04</span>
+        <h3 data-i18n="about.f4title">Flexibel &amp; gespreid betalen</h3>
+        <p data-i18n="about.f4desc">Lespakketten voor elk niveau, les van maandag t/m zaterdag en betaling in termijnen mogelijk.</p>
+      </div>
+    </div>
+
+    <div class="area-strip rv">
+      <h3 data-i18n="about.areaTitle">Lesgebied</h3>
+      <p>
+        <span data-i18n="about.tagZeist">Zeist</span><i>•</i>
+        <span data-i18n="about.tagUtrecht">Utrecht</span><i>•</i>
+        <span data-i18n="about.tagDeBilt">De Bilt</span><i>•</i>
+        <span data-i18n="about.tagDoorn">Doorn</span><i>•</i>
+        <span data-i18n="about.tagAmersfoort">Amersfoort e.o.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- TARIEVEN -->
+  <section class="section" id="tarieven">
+    <header class="sec-head rv">
+      <p class="sec-eyebrow"><i>02</i><span data-i18n="pricing.eyebrow">Tarieven</span></p>
+      <h2 class="sec-title" data-i18n="pricing.title">Lespakketten &amp; prijzen</h2>
+      <p class="sec-lead" data-i18n="pricing.lead">Alle pakketten zijn er in schakel én automaat, met lessen van 60 minuten.
+        Prijzen zijn inclusief BTW, exclusief autohuur voor het examen. Geldig vanaf 2026.</p>
+    </header>
+
+    <div class="rail-head rv">
+      <span class="rail-hint" data-i18n="v2.drag">Sleep of scroll</span>
+      <div class="rail-nav">
+        <button type="button" id="railPrev" aria-label="Vorige"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <button type="button" id="railNext" aria-label="Volgende"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+
+    <div class="rail rv" id="rail">
+      <article class="pkg">
+        <h3 data-i18n="pricing.p1title">Pakket 1</h3>
+        <p class="pkg-price">€650</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p1f1">10 lessen à 60 min</li>
+          <li data-i18n="pricing.p1f2">Geen examen inbegrepen</li>
+        </ul>
+      </article>
+
+      <article class="pkg">
+        <h3 data-i18n="pricing.p2title">Pakket 2</h3>
+        <p class="pkg-price">€910</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p2f1">10 lessen à 60 min</li>
+          <li data-i18n="pricing.p2f2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.p2f3">1 praktijkexamen</li>
+        </ul>
+      </article>
+
+      <article class="pkg">
+        <h3 data-i18n="pricing.p3title">Pakket 3</h3>
+        <p class="pkg-price">€1240</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p3f1">15 lessen à 60 min</li>
+          <li data-i18n="pricing.p3f2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.p3f3">1 praktijkexamen</li>
+        </ul>
+      </article>
+
+      <article class="pkg pkg-featured">
+        <span class="pkg-badge" data-i18n="pricing.badgePopular">Populair</span>
+        <h3 data-i18n="pricing.p4title">Pakket 4</h3>
+        <p class="pkg-price">€1540</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p4f1">20 lessen à 60 min</li>
+          <li data-i18n="pricing.p4f2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.p4f3">1 praktijkexamen</li>
+        </ul>
+      </article>
+
+      <article class="pkg">
+        <h3 data-i18n="pricing.p5title">Pakket 5</h3>
+        <p class="pkg-price">€2100</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p5f1">30 lessen à 60 min</li>
+          <li data-i18n="pricing.p5f2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.p5f3">1 praktijkexamen</li>
+        </ul>
+      </article>
+
+      <article class="pkg">
+        <h3 data-i18n="pricing.p6title">Pakket 6</h3>
+        <p class="pkg-price">€2750</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p6f1">40 lessen à 60 min</li>
+          <li data-i18n="pricing.p6f2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.p6f3">1 praktijkexamen</li>
+        </ul>
+      </article>
+
+      <article class="pkg">
+        <h3 data-i18n="pricing.p7title">Pakket 7</h3>
+        <p class="pkg-price">€3150</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.p7f1">40 lessen à 60 min</li>
+          <li data-i18n="pricing.p7f2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.p7f3">TTT + 2 praktijkexamens</li>
+        </ul>
+      </article>
+
+      <article class="pkg pkg-garantie">
+        <span class="pkg-badge" data-i18n="pricing.gBadge">Rijbewijsgarantie</span>
+        <h3 data-i18n="pricing.gTitle">Garantiepakket</h3>
+        <p class="pkg-price">€4700</p>
+        <p class="pkg-sub" data-i18n="pricing.sub">schakel of automaat</p>
+        <ul>
+          <li data-i18n="pricing.gF1">60 lessen à 60 min</li>
+          <li data-i18n="pricing.gF2">Vaste lesauto &amp; instructeur</li>
+          <li data-i18n="pricing.gF3">Onbeperkt CBR-examen</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="price-table rv">
+      <h3 data-i18n="pricing.tableTitle">Losse lessen &amp; examens</h3>
+      <div class="pt-row"><span data-i18n="pricing.row1">Losse rijles (schakel)</span><b>€67</b></div>
+      <div class="pt-row"><span data-i18n="pricing.row2">Losse rijles (automaat)</span><b>€67</b></div>
+      <div class="pt-row"><span data-i18n="pricing.row3">CBR-examen + 1 uur rijles</span><b>€395</b></div>
+      <div class="pt-row"><span data-i18n="pricing.row4">Bnor-examen + 1 uur rijles</span><b>€465</b></div>
+      <div class="pt-row"><span data-i18n="pricing.row5">Faalangst-examen + 1 uur rijles</span><b>€495</b></div>
+      <div class="pt-row"><span data-i18n="pricing.row6">Tussentijdse toets + 1 uur rijles</span><b>€375</b></div>
+    </div>
+
+    <p class="fine-print rv" data-i18n="pricing.finePrint">Alle prijzen van rijlespakketten zijn inclusief BTW, maar exclusief autohuur.
+      Herexamen is gratis; administratiekosten bedragen €50. Bij aankoop van een pakket wordt het lesgeld
+      niet terugbetaald. Alle lessen dienen binnen 12 maanden na de eerste les te worden afgenomen en
+      afgereden — daarna vervalt het recht op het inbegrepen examen.</p>
+  </section>
+
+  <!-- ACTIE (inverted poster) -->
+  <section class="actie" id="actie">
+    <div class="actie-inner">
+      <p class="actie-eyebrow rv" data-i18n="actie.eyebrow">Tijdelijke actie</p>
+      <h2 class="actie-title rv" data-i18n="actie.title">Rijbewijs Actie</h2>
+      <p class="actie-lead rv" data-i18n="actie.lead">Eerlijk, transparant en zonder kleine lettertjes. Gespreid betalen is bespreekbaar.</p>
+
+      <div class="actie-grid rv">
+        <div class="actie-offer">
+          <p class="actie-price">€1799</p>
+          <p class="actie-desc" data-i18n-html="actie.opt1Desc">20 rijlessen (60 min)<br />2 praktijkexamens of TTT</p>
+          <p class="actie-sub" data-i18n="actie.opt1Sub">schakel of automaat</p>
+        </div>
+        <div class="actie-offer">
+          <p class="actie-price">€2370</p>
+          <p class="actie-desc" data-i18n-html="actie.opt2Desc">30 rijlessen (60 min)<br />2 praktijkexamens of TTT</p>
+          <p class="actie-sub" data-i18n="actie.opt2Sub">schakel of automaat</p>
+        </div>
+      </div>
+
+      <p class="actie-note rv"><strong data-i18n="actie.noteLabel">Let op:</strong> <span data-i18n="actie.noteText">bij een herexamen zijn 8 uur extra rijlessen verplicht. Alle lessen en examens dienen binnen 18 maanden na de eerste les te worden afgenomen, anders vervalt de examengarantie.</span></p>
+
+      <a href="#contact" class="btn btn-dark rv" data-i18n="actie.cta">Vraag de actie aan</a>
+    </div>
+  </section>
+
+  <!-- WERKWIJZE -->
+  <section class="section" id="werkwijze">
+    <header class="sec-head rv">
+      <p class="sec-eyebrow"><i>03</i><span data-i18n="process.eyebrow">Werkwijze</span></p>
+      <h2 class="sec-title" data-i18n="process.title">In vier stappen naar je rijbewijs</h2>
+    </header>
+
+    <div class="steps">
+      <div class="step rv">
+        <span class="step-ghost">1</span>
+        <h3 data-i18n="process.s1title">Intake-les</h3>
+        <p data-i18n="process.s1desc">We plannen een intake, schatten in hoe snel je examenklaar bent en bespreken je wensen qua lestijden en lesduur.</p>
+      </div>
+      <div class="step rv">
+        <span class="step-ghost">2</span>
+        <h3 data-i18n="process.s2title">Machtiging via DigiD</h3>
+        <p data-i18n="process.s2desc">Je machtigt Rijschool Omary via DigiD, zodat wij namens jou een examen kunnen aanvragen.</p>
+      </div>
+      <div class="step rv">
+        <span class="step-ghost">3</span>
+        <h3 data-i18n="process.s3title">Examen aanvragen</h3>
+        <p data-i18n="process.s3desc">Zodra je begint met lessen, vragen wij het praktijkexamen aan — zo werk je gericht naar je doel.</p>
+      </div>
+      <div class="step rv">
+        <span class="step-ghost">4</span>
+        <h3 data-i18n="process.s4title">Lesplan &amp; examen</h3>
+        <p data-i18n="process.s4desc">We stellen een lesplan op en bereiden je voor op het praktijkexamen en, indien nodig, het theorie-examen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINKS -->
+  <section class="section" id="links">
+    <header class="sec-head rv">
+      <p class="sec-eyebrow"><i>04</i><span data-i18n="links.eyebrow">Nuttige links</span></p>
+      <h2 class="sec-title" data-i18n="links.title">Alles voor je theorie &amp; examen</h2>
+    </header>
+
+    <div class="link-list">
+      <a class="link-row rv" href="https://mijn.cbr.nl/Authentication/Login?ReturnUrl=%2f" target="_blank" rel="noopener">
+        <span class="link-no">01</span>
+        <span class="link-body">
+          <h3 data-i18n="links.l1title">Rijschool machtigen (DigiD)</h3>
+          <p data-i18n="links.l1desc">Log in, kies "Rijschool machtigen" en voer ons registratienummer 4938U8 in.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+
+      <a class="link-row rv" href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2fnl" target="_blank" rel="noopener">
+        <span class="link-no">02</span>
+        <span class="link-body">
+          <h3 data-i18n="links.l2title">Eigen verklaring</h3>
+          <p data-i18n="links.l2desc">Vul via mijn.cbr.nl je eigen verklaring in voordat je het praktijkexamen aanvraagt.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+
+      <a class="link-row rv" href="https://digid.nl/aanvragen" target="_blank" rel="noopener">
+        <span class="link-no">03</span>
+        <span class="link-body">
+          <h3 data-i18n="links.l3title">DigiD aanvragen</h3>
+          <p data-i18n="links.l3desc">Nog geen DigiD? Vraag deze eenvoudig aan via digid.nl.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+
+      <a class="link-row rv" href="http://www.2todrive.nl/jongeren/home/" target="_blank" rel="noopener">
+        <span class="link-no">04</span>
+        <span class="link-body">
+          <h3 data-i18n="links.l4title">2toDrive</h3>
+          <p data-i18n="links.l4desc">Vanaf 16,5 jaar beginnen met rijlessen? Lees hier alles over 2toDrive.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+
+      <a class="link-row rv" href="http://www.cbr.nl/" target="_blank" rel="noopener">
+        <span class="link-no">05</span>
+        <span class="link-body">
+          <h3 data-i18n="links.l5title">CBR.nl</h3>
+          <p data-i18n="links.l5desc">Alle officiële informatie over het rijbewijs en de examens.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+
+      <a class="link-row rv" href="https://mijn.cbr.nl/nl/Authentication/Login?ReturnUrl=%2fnl" target="_blank" rel="noopener">
+        <span class="link-no">06</span>
+        <span class="link-body">
+          <h3 data-i18n="links.l6title">Theorie-examen reserveren</h3>
+          <p data-i18n="links.l6desc">Reserveer zelf je theorie-examen voor de auto via mijn.cbr.nl.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+
+      <a class="link-row link-row-promo rv" href="https://www.traffictheory.nl/" target="_blank" rel="noopener">
+        <span class="link-no">★</span>
+        <span class="link-body">
+          <h3 data-i18n="links.promoTitle">Online theoriecursus (Russisch)</h3>
+          <p data-i18n="links.promoDesc">Voor wie zich in het Russisch op het theorie-examen voorbereidt.</p>
+        </span>
+        <span class="link-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <header class="sec-head rv">
+      <p class="sec-eyebrow"><i>05</i><span data-i18n="contact.eyebrow">Contact</span></p>
+      <h2 class="sec-title" data-i18n="contact.title">Vraag jouw rijlessen aan</h2>
+      <p class="sec-lead" data-i18n="contact.lead">Heb je vragen of wil je starten? Stuur een bericht of neem direct contact op.</p>
+    </header>
+
+    <div class="contact-split">
+      <form class="cform rv" id="contactForm" novalidate>
+        <div class="cform-row">
+          <label><span data-i18n="contact.labelName">Je naam *</span>
+            <input type="text" name="naam" autocomplete="name" maxlength="100" required />
+          </label>
+          <label><span data-i18n="contact.labelEmail">Je e-mailadres *</span>
+            <input type="email" name="email" autocomplete="email" maxlength="200" required />
+          </label>
+        </div>
+        <div class="cform-row">
+          <label><span data-i18n="contact.labelPhone">Je telefoonnummer *</span>
+            <input type="tel" name="telefoon" autocomplete="tel" maxlength="30" required />
+          </label>
+          <label><span data-i18n="contact.labelSubject">Onderwerp</span>
+            <input type="text" name="onderwerp" maxlength="200" />
+          </label>
+        </div>
+        <fieldset class="cform-radios">
+          <legend data-i18n="contact.labelLesson">Type les</legend>
+          <label><input type="radio" name="typeLes" value="Schakel" checked /> <span data-i18n="contact.radioManual">Schakel</span></label>
+          <label><input type="radio" name="typeLes" value="Automaat" /> <span data-i18n="contact.radioAuto">Automaat</span></label>
+        </fieldset>
+        <label><span data-i18n="contact.labelMessage">Je bericht</span>
+          <textarea name="bericht" rows="4" maxlength="3000"></textarea>
+        </label>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="cform-foot">
+          <button type="submit" class="btn btn-fill" id="submitBtn" data-i18n="contact.submit">Verzenden</button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <aside class="contact-aside rv">
+        <div class="aside-block">
+          <h3 data-i18n="contact.directTitle">Direct contact</h3>
+          <a href="tel:+31628421696">06-28421696</a>
+          <a href="mailto:mnomary@hotmail.com">mnomary@hotmail.com</a>
+          <a href="https://wa.me/31628421696" target="_blank" rel="noopener" data-i18n="contact.whatsapp">WhatsApp</a>
+          <p data-i18n="contact.facebook">Facebook: Rijschool Omary</p>
+          <p data-i18n="contact.hours">Maandag t/m zaterdag</p>
+          <p data-i18n="contact.area">Zeist, Utrecht &amp; omstreken</p>
+        </div>
+        <div class="aside-block">
+          <h3 data-i18n="contact.infoTitle">Bedrijfsgegevens</h3>
+          <p><span data-i18n="contact.cbr">CBR-registratie</span>: 2418R8</p>
+          <p><span data-i18n="contact.kvk">KvK</span>: 30194948</p>
+          <p><span data-i18n="contact.btw">BTW-nummer</span>: NL2353217222</p>
+          <p><span data-i18n="contact.iban">IBAN</span>: NL63 INGB 0757377505</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-mark" aria-hidden="true">OMARY</p>
+  <div class="footer-row">
+    <p>© <span id="year"></span> Rijschool Omary — <span data-i18n="footer.tagline">rijschool in Zeist &amp; Utrecht</span></p>
+    <a href="/" class="footer-v1" data-i18n="v2.v1">Klassieke versie</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/31628421696" target="_blank" rel="noopener" class="fab" id="fabWhatsapp" aria-label="Stuur een WhatsApp-bericht">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 8.1 8.11c0 4.47-3.63 8.1-8.1 8.1a8.05 8.05 0 0 1-4.12-1.13l-.3-.17-3.12.82.83-3.04-.19-.32a8.04 8.04 0 0 1-1.24-4.3 8.1 8.1 0 0 1 8.14-8.07m-4.5 4.62c-.17 0-.44.06-.67.32-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.78 4.31 3.79.6.24 1.07.38 1.44.48.6.17 1.15.14 1.58.09.48-.07 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.07-.1-.24-.17-.5-.29-.26-.13-1.5-.74-1.74-.82-.23-.09-.4-.13-.58.13-.17.26-.66.82-.81 1-.15.17-.3.19-.55.06-.26-.13-1.08-.4-2.06-1.27-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.58-1.44-.81-1.96-.2-.5-.42-.44-.58-.44Z"/></svg>
+</a>
+
+<script src="/translations.js"></script>
+<script src="/v2/script.js"></script>
+</body>
+</html>

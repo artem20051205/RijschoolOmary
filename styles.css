@@ -719,6 +719,15 @@ a.contact-line:hover svg { color: var(--accent); }
   font-size: 14.5px;
 }
 .footer p { font-size: 13px; color: var(--dimmer); }
+.footer-v2 {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--dim);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.footer-v2:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ============ FAB ============ */
 .fab {
